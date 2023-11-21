@@ -24,7 +24,7 @@
         <p>brand:  <% if (typeof (item.brand) !== "undefined") { %><%= item.brand %><% } %></p><br>
         
     </div>
-        <a href="file:///home/developer/project/views/edit.ejs" >Update</a><br><br>
+        <a href="/edit?_id=<%= item._id %>" >Update</a><br><br>
         <a href="/delete?_id=<%= item._id %>&owner=<%= item.ownerID %>">Delete</a><br><br>
         <a href="/home">Home</a>
 </body>
